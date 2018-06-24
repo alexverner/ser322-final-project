@@ -30,7 +30,7 @@
             </thead>
 
             <tbody>
-                <?php include("mysqli_connect.php");?>
+                <?php include("getStadiums.php"); ?>
             </tbody>
         </table>
         <!-- end .stadium -->
@@ -48,13 +48,7 @@
             </thead>
 
             <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                <?php include("getMatchups.php"); ?>
             </tbody>
         </table>
         <!-- end .match -->
@@ -71,12 +65,7 @@
             </thead>
 
             <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                <?php include("getGoals.php"); ?>
             </tbody>
         </table>
         <!-- end .goal -->
@@ -94,13 +83,7 @@
             </thead>
 
             <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                <?php include("getPlayers.php"); ?>
             </tbody>
         </table>
         <!-- end .player -->
@@ -117,12 +100,7 @@
             </thead>
 
             <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                <?php include("getTeams.php"); ?>
             </tbody>
         </table>
         <!-- end .team -->
