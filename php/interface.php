@@ -20,6 +20,18 @@
         </div>
         <!-- end .btn-group -->
 
+        <!-- begin .query -->
+        <div class="queries">
+            <?php include("getQuerySelection.php"); ?>
+            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                <select name="queries" onchange="this.form.submit();">
+                    <?php echo getQuerySelection($selected); ?>
+                </select>
+            </form>
+        </div>
+
+        <!-- end .query -->
+
         <!-- begin .stadium -->
         <table class="stadium">
             <thead>
