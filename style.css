@@ -47,14 +47,14 @@ button:last-child {
     margin-right: 0;
 }
 
-.queries {
+.query {
     position: relative;
     min-width: 160px;
     height: 38px;
     background: #fff;
 }
 
-.queries::after {
+.query::after {
     content: '';
     position: absolute;
     width: 0;
@@ -69,7 +69,7 @@ button:last-child {
     pointer-events: none;
 }
 
-.queries select {
+.query select {
     font-size: 16px;
     border: none;
     box-shadow: none;
@@ -86,16 +86,16 @@ button:last-child {
     -webkit-appearance: none;
 }
 
-.queries select:-moz-focusring {
+.query select:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #000;
 }
 
-.queries select::-ms-expand {
+.query select::-ms-expand {
     display: none;
 }
 
-.queries select:focus {
+.query select:focus {
     border-color: gray;
 }
 
