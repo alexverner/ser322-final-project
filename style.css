@@ -101,7 +101,7 @@ button:last-child {
 
 .table-wrapper {
     width: 80%;
-    height: 400px;
+    max-height: 400px;
     overflow: scroll;
 }
 
