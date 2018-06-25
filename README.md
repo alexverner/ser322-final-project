@@ -3,7 +3,7 @@
 ## Overview
 This web application was developed for the ASU SER 322 Final Project. It uses PHP to serve a MySQL database with a soccer tournament as the domain. A sample database is provided that models the 2018 FIFA World Cup.
 
-### Team Members:
+#### Team Members:
 * Trevor Davis
 * Jordan Herzog
 * Corey Lopez
