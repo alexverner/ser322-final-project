@@ -10,111 +10,124 @@
 <body>
     <!-- begin .container -->
     <div class="container">
-        <!-- begin .btn-group -->
-        <div class="btn-group">
-            <button>Stadium</button>
-            <button>Match</button>
-            <button>Goal</button>
-            <button>Player</button>
-            <button>Team</button>
-        </div>
-        <!-- end .btn-group -->
+        <!-- begin .row -->
+        <div class="row">
+            <!-- begin .btn-group -->
+            <div class="btn-group">
+                <button>Stadium</button>
+                <button>Match</button>
+                <button>Goal</button>
+                <button>Player</button>
+                <button>Team</button>
+            </div>
+            <!-- end .btn-group -->
 
-        <!-- begin .query -->
-        <div class="queries">
-            <?php include("getQuerySelection.php"); ?>
-            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-                <select name="queries" onchange="this.form.submit();">
-                    <?php echo getQuerySelection($selected); ?>
-                </select>
-            </form>
+            <!-- begin .queries -->
+            <div class="queries">
+                <?php include("getQuerySelection.php"); ?>
+                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                    <select name="queries" onchange="this.form.submit();">
+                        <?php echo getQuerySelection($selected); ?>
+                    </select>
+                </form>
+            </div>
+            <!-- end .queries -->
         </div>
-
-        <!-- end .query -->
+        <!-- end .row -->
 
         <!-- begin .stadium -->
-        <table class="stadium">
-            <thead>
-                <tr>
-                    <th>Stadium Name</th>
-                    <th>City</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <?php include("getStadiums.php"); ?>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table class="stadium">
+                <thead>
+                    <tr>
+                        <th>Stadium Name</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <?php include("getStadiums.php"); ?>
+                </tbody>
+            </table>
+        </div>
         <!-- end .stadium -->
 
         <!-- begin .match -->
-        <table class="match">
-            <thead>
-                <tr>
-                    <th>Match ID</th>
-                    <th>Home Team Name</th>
-                    <th>Away Team Name</th>
-                    <th>Stadium Name</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <?php include("getMatchups.php"); ?>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table class="match">
+                <thead>
+                    <tr>
+                        <th>Match ID</th>
+                        <th>Home Team Name</th>
+                        <th>Away Team Name</th>
+                        <th>Stadium Name</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <?php include("getMatchups.php"); ?>
+                </tbody>
+            </table>
+        </div>
         <!-- end .match -->
 
         <!-- begin .goal -->
-        <table class="goal">
-            <thead>
-                <tr>
-                    <th>Goal ID</th>
-                    <th>Player ID</th>
-                    <th>Match ID</th>
-                    <th>Time</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <?php include("getGoals.php"); ?>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table class="goal">
+                <thead>
+                    <tr>
+                        <th>Goal ID</th>
+                        <th>Player ID</th>
+                        <th>Match ID</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <?php include("getGoals.php"); ?>
+                </tbody>
+            </table>
+        </div>
         <!-- end .goal -->
 
         <!-- begin .player -->
-        <table class="player">
-            <thead>
-                <tr>
-                    <th>Player ID</th>
-                    <th>Player Name</th>
-                    <th>Team Name</th>
-                    <th>Position</th>
-                    <th>Birth Year</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <?php include("getPlayers.php"); ?>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table class="player">
+                <thead>
+                    <tr>
+                        <th>Player ID</th>
+                        <th>Player Name</th>
+                        <th>Team Name</th>
+                        <th>Position</th>
+                        <th>Birth Year</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <?php include("getPlayers.php"); ?>
+                </tbody>
+            </table>
+        </div>
         <!-- end .player -->
 
         <!-- begin .team -->
-        <table class="team">
-            <thead>
-                <tr>
-                    <th>Team Name</th>
-                    <th>Head Coach</th>
-                    <th>Group</th>
-                    <th>Points</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <?php include("getTeams.php"); ?>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table class="team">
+                <thead>
+                    <tr>
+                        <th>Team Name</th>
+                        <th>Head Coach</th>
+                        <th>Group</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <?php include("getTeams.php"); ?>
+                </tbody>
+            </table>
+        </div>
         <!-- end .team -->
     </div>
     <!-- end .container -->

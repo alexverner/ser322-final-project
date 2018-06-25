@@ -15,9 +15,16 @@ body {
     align-items: center;
 }
 
+.row {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
 .btn-group {
     display: flex;
     margin-bottom: 16px;
+    margin-right: 32px;
 }
 
 button {
@@ -40,8 +47,66 @@ button:last-child {
     margin-right: 0;
 }
 
+.queries {
+    position: relative;
+    min-width: 160px;
+    height: 38px;
+    background: #fff;
+}
+
+.queries::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 8px;
+    bottom: 0;
+    margin: auto;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: gray transparent transparent transparent;
+    pointer-events: none;
+}
+
+.queries select {
+    font-size: 16px;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    padding-right: 32px;
+    padding-left: 16px;
+    border: 1px solid gray;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.queries select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+.queries select::-ms-expand {
+    display: none;
+}
+
+.queries select:focus {
+    border-color: gray;
+}
+
+.table-wrapper {
+    width: 80%;
+    height: 400px;
+    overflow: scroll;
+}
+
 table {
-    margin-bottom: 16px;
+    margin-top: 16px;
     width: 100%;
     border-collapse: collapse;
     text-align: center;
