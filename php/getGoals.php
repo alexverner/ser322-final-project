@@ -1,6 +1,5 @@
 <?php
     //connect
-    //require_once("./mysqli_connect.php");
     include("./mysqli_connect.php");
 
     //query
@@ -19,6 +18,6 @@
         mysqli_free_result($result);
     }
 
-    //close connection elsewhere
+    //close connection
     mysqli_close($conn);
 ?>
