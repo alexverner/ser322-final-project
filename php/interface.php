@@ -14,11 +14,11 @@
         <div class="row">
             <!-- begin .btn-group -->
             <div class="btn-group">
-                <button>Stadium</button>
-                <button>Match</button>
-                <button>Goal</button>
-                <button>Player</button>
-                <button>Team</button>
+                <button><a href="#stadium-link">Stadium</a></button>
+                <button><a href="#match-link">Match</a></button>
+                <button><a href="#goal-link">Goal</a></button>
+                <button><a href="#player-link">Player</a></button>
+                <button><a href="#team-link">Team</a></button>
             </div>
             <!-- end .btn-group -->
 
@@ -45,7 +45,7 @@
         <!-- end .query-result -->
 
         <!-- begin .stadium -->
-        <div class="table-wrapper">
+        <div class="table-wrapper" id="stadium-link">
             <table class="stadium">
                 <thead>
                     <tr>
@@ -62,7 +62,7 @@
         <!-- end .stadium -->
 
         <!-- begin .match -->
-        <div class="table-wrapper">
+        <div class="table-wrapper" id="match-link">
             <table class="match">
                 <thead>
                     <tr>
@@ -82,7 +82,7 @@
         <!-- end .match -->
 
         <!-- begin .goal -->
-        <div class="table-wrapper">
+        <div class="table-wrapper" id="goal-link">
             <table class="goal">
                 <thead>
                     <tr>
@@ -101,7 +101,7 @@
         <!-- end .goal -->
 
         <!-- begin .player -->
-        <div class="table-wrapper">
+        <div class="table-wrapper" id="player-link">
             <table class="player">
                 <thead>
                     <tr>
@@ -121,7 +121,7 @@
         <!-- end .player -->
 
         <!-- begin .team -->
-        <div class="table-wrapper">
+        <div class="table-wrapper" id="team-link">
             <table class="team">
                 <thead>
                     <tr>
