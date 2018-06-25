@@ -37,7 +37,7 @@
         <!-- end .row -->
         
         <!-- begin .query-result -->
-        <div class="table-wrapper">
+        <div class="table-wrapper table-query-result">
             <?php 
                 include("getSelectedQueryResults.php");
                 echo getSelectedQueryResults($selected); ?>
