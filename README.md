@@ -1,7 +1,7 @@
 # ser322-final-project
 
 ## Overview
-This web application was developed for the ASU SER 322 Final Project. It uses PHP to serve a MySQL database with a soccer tournament as the domain. A sample database is provided that models the 2018 FIFA World Cup.
+This web application was developed for the ASU SER 322 Summer 2018 Final Project. It uses PHP to serve a MySQL database with a soccer tournament as the domain. A sample database is provided that models the 2018 FIFA World Cup.
 
 #### Team Members:
 * Trevor Davis
@@ -11,7 +11,7 @@ This web application was developed for the ASU SER 322 Final Project. It uses PH
 
 ## Environment
 You will need a web server which can use PHP (such as Apache) as well as PHP 
-itself and MySSQL installed and configured correctly.
+itself and MySQL installed and configured correctly.
 Depending on your system, copy the PHP files in /php to a location served up by 
 your web server.
 
@@ -29,20 +29,20 @@ password to suit your MySQL installation. The password must be identified with
 caching_sha2_password.
 
 ## Database
-mysqli_connect.php connects to a database called 'fifaDB', to access this data:
-Create a MySQL database called fifaDB on the system:
-> mysql -u root -p
-> mysql> CREATE DATABASE fifaDB;
-> mysql> GRANT ALL ON fifaDB.* TO 'encryptedUser'@'localhost';
+mysqli_connect.php connects to a sample database called 'fifaDB', to access this data:
+* Create a MySQL database called fifaDB on the system and grant access to 'encryptedUser':
+>> mysql -u root -p
+>> mysql> CREATE DATABASE fifaDB;
+>> mysql> GRANT ALL ON fifaDB.* TO 'encryptedUser'@'localhost';
     
-Then, import the MySQL dump in fifaDB-sample/ to this database:
-> mysql -u root -p fifaDB < path/to/fifaDB.sql
+* Then, import the MySQL dump in fifaDB-sample/ to this database:
+>> mysql -u root -p fifaDB < path/to/fifaDB.sql
 
-To verify the database loaded correctly and is accessible:
-> mysql -u encryptedUser -p
-> mysql> USE fifaDB;
-> mysql> SHOW TABLES;
-> mysql> SELECT * FROM stadium;
+* To verify the database loaded correctly and is accessible:
+>> mysql -u encryptedUser -p
+>> mysql> USE fifaDB;
+>> mysql> SHOW TABLES;
+>> mysql> SELECT * FROM stadium;
 
 ## Interface
 In your browser localhost/php/interface.php displays the database tables and 
