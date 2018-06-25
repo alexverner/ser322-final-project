@@ -3,10 +3,12 @@
 
     function getQuerySelection($select){
         $queries=array("Select Query"=>1,
-                        "Top Scorers"=>2,
-                        "Top Teams"=>3);
-                        //TODO: add query titles
-        
+                       "Group B Stadiums"=>2,
+                       "Cristiano Ronaldo Matches"=>3,
+                       "Top Teams by Group"=>4,
+                       "Top Scorers"=>5,
+                       "Youngest Players"=>6);
+                       
         $options='';
                 
         foreach($queries as $k=>$v){        
