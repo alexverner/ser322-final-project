@@ -1,6 +1,7 @@
 <?php
     //connect
-    require_once("./mysqli_connect.php");
+    //require_once("./mysqli_connect.php");
+    include("./mysqli_connect.php");
 
     //query
     $stadiumQuery = "SELECT stadiumName, city FROM stadium";
@@ -17,5 +18,5 @@
     }
 
     //close connection elsewhere
-    //mysqli_close($conn);
+    mysqli_close($conn);
 ?>

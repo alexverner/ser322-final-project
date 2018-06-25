@@ -1,6 +1,7 @@
 <?php
     //connect
-    require_once("./mysqli_connect.php");
+    //require_once("./mysqli_connect.php");
+    include("./mysqli_connect.php");
 
     //query
     $goalQuery = "SELECT * FROM goal";
@@ -19,5 +20,5 @@
     }
 
     //close connection elsewhere
-    //mysqli_close($conn);
+    mysqli_close($conn);
 ?>

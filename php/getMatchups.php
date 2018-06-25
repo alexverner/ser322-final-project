@@ -1,6 +1,7 @@
 <?php
     //connect
     require_once("./mysqli_connect.php");
+    include("./mysqli_connect.php");
 
     //query
     $matchupQuery = "SELECT * FROM matchups";
@@ -18,4 +19,7 @@
 
         mysqli_free_result($result);
     }
+
+    //close connection elsewhere
+    mysqli_close($conn);
 ?>

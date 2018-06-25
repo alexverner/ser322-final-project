@@ -19,14 +19,8 @@
 
         return $options;        
     }
-         
+
     if(isset($_POST['queries'])){
-        $selected= $_POST['queries'];        
-        switch($selected){
-            case 2: include("getTopScorers.php"); break;
-            default: break;
-            
-            //TODO: add cases for each query including appropriate query.php file 
-        }     
-    }        
+        $selected= $_POST['queries'];
+    }
 ?>

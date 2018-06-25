@@ -22,8 +22,8 @@
             </div>
             <!-- end .btn-group -->
 
-            <!-- begin .queries -->
-            <div class="queries">
+            <!-- begin .query-select -->
+            <div class="query">
                 <?php include("getQuerySelection.php"); ?>
                 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
                     <select name="queries" onchange="this.form.submit();">
@@ -31,9 +31,18 @@
                     </select>
                 </form>
             </div>
-            <!-- end .queries -->
+            <!--end .query-select-->
+
         </div>
         <!-- end .row -->
+        
+        <!-- begin .query-result -->
+        <div class="table-wrapper">
+            <?php 
+                include("getSelectedQueryResults.php");
+                echo getSelectedQueryResults($selected); ?>
+        </div>
+        <!-- end .query-result -->
 
         <!-- begin .stadium -->
         <div class="table-wrapper">
