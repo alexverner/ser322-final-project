@@ -54,9 +54,6 @@ provides a small query demonstration.
 
 Resources
 ---------
-This resource helped configure Apache, PHP, MySQL for this project:
-*https://www.znetlive.com/blog/how-to-install-apache-php-and-mysql-on-windows-10-machine/
+[This resource helped configure Apache, PHP, MySQL for this project](https://www.znetlive.com/blog/how-to-install-apache-php-and-mysql-on-windows-10-machine/)
 
-This resource helped develop the this document & the initialization process 
-for the application:
-*https://github.com/edlangley/inventory-webapp/
+[This resource helped develop this document & the initialization process for the application](https://github.com/edlangley/inventory-webapp/)
