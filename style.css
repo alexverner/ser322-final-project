@@ -108,10 +108,10 @@ button a {
     width: 80%;
     max-height: 400px;
     overflow: scroll;
+    margin-bottom: 16px;
 }
 
 table {
-    margin-top: 16px;
     width: 100%;
     border-collapse: collapse;
     text-align: center;
@@ -124,6 +124,10 @@ thead {
 
 th {
     padding: 8px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #3d405b;
 }
 
 td {
