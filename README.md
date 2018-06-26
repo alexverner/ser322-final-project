@@ -1,59 +1,54 @@
 # ser322-final-project
 
-Overview
---------
-TODO: describe project
+## Overview
+This web application was developed for the ASU SER 322 Summer 2018 Final Project. It uses PHP to serve a MySQL database with a soccer tournament as the domain. A sample database is provided that models the 2018 FIFA World Cup.
 
-Environment
------------
+#### Team Members:
+* Trevor Davis
+* Jordan Herzog
+* Corey Lopez
+* Alex Verner
+
+## Environment
 You will need a web server which can use PHP (such as Apache) as well as PHP 
-itself and MySSQL installed and configured correctly.
+itself and MySQL installed and configured correctly.
 Depending on your system, copy the PHP files in /php to a location served up by 
 your web server.
 
-MySQL User
-----------
+## MySQL User
 Currently, mysqli_connect.php which connects to the MySQL database requires that
 a MySQL user 'encryptedUser' with password 'secretPass' extists, to add such 
 user:
 
-    mysql -u root -p
-    mysql> CREATE USER 'encryptedUser'@'localhost'
-           IDENTIFIED WITH caching_sha2_password BY 'secretPass';
+> mysql -u root -p
+> mysql> CREATE USER 'encryptedUser'@'localhost'
+>>> IDENTIFIED WITH caching_sha2_password BY 'secretPass';
 
 Alternatively, edit the file mysqli_connect.php with appropriate username and 
 password to suit your MySQL installation. The password must be identified with
 caching_sha2_password.
 
-Database
---------
-mysqli_connect.php connects to a database called 'fifaDB', to access this data:
-Create a MySQL database called fifaDB on the system:
-
-    mysql -u root -p
-    mysql> CREATE DATABASE fifaDB;
-    mysql> GRANT ALL ON fifaDB.* TO 'encryptedUser'@'localhost';
+## Database
+mysqli_connect.php connects to a sample database called 'fifaDB', to access this data:
+* Create a MySQL database called fifaDB on the system and grant access to 'encryptedUser':
+>> mysql -u root -p
+>> mysql> CREATE DATABASE fifaDB;
+>> mysql> GRANT ALL ON fifaDB.* TO 'encryptedUser'@'localhost';
     
-Then, import the MySQL dump in fifaDB-sample/ to this database:
-    
-    mysql -u root -p fifaDB < path/to/fifaDB.sql
+* Then, import the MySQL dump in fifaDB-sample/ to this database:
+>> mysql -u root -p fifaDB < path/to/fifaDB.sql
 
-To verify the database loaded correctly and is accessible:
+* To verify the database loaded correctly and is accessible:
+>> mysql -u encryptedUser -p
+>> mysql> USE fifaDB;
+>> mysql> SHOW TABLES;
+>> mysql> SELECT * FROM stadium;
 
-    mysql -u encryptedUser -p
-    mysql> USE fifaDB;
-    mysql> SHOW TABLES;
-    mysql> SELECT * FROM stadium;
-
-Interface
----------
-TODO: complete interface instructions
-
+## Interface
 In your browser localhost/php/interface.php displays the database tables and 
 provides a small query demonstration.
 
-Resources
----------
-[This resource helped configure Apache, PHP, MySQL for this project](https://www.znetlive.com/blog/how-to-install-apache-php-and-mysql-on-windows-10-machine/)
+## Resources
+* [This resource helped configure Apache, PHP, MySQL for this project](https://www.znetlive.com/blog/how-to-install-apache-php-and-mysql-on-windows-10-machine/)
 
-[This resource helped develop this document & the initialization process for the application](https://github.com/edlangley/inventory-webapp/)
+* [This resource helped develop this document & the initialization process for the application](https://github.com/edlangley/inventory-webapp/)
