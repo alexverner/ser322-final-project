@@ -14,11 +14,11 @@
         <div class="row">
             <!-- begin .btn-group -->
             <div class="btn-group">
-                <button><a href="#stadium-link">Stadium</a></button>
-                <button><a href="#match-link">Match</a></button>
-                <button><a href="#goal-link">Goal</a></button>
-                <button><a href="#player-link">Player</a></button>
-                <button><a href="#team-link">Team</a></button>
+                <a href="#stadium-link" class="button">Stadium</a>
+                <a href="#match-link" class="button">Match</a>
+                <a href="#goal-link" class="button">Goal</a>
+                <a href="#player-link" class="button">Player</a>
+                <a href="#team-link" class="button">Team</a>
             </div>
             <!-- end .btn-group -->
 
