@@ -47,6 +47,11 @@ button:last-child {
     margin-right: 0;
 }
 
+button a {
+    color: white;
+    text-decoration: none;
+}
+
 .query {
     position: relative;
     min-width: 160px;
